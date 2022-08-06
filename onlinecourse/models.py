@@ -103,7 +103,7 @@ class Enrollment(models.Model):
     # Other fields and methods you would like to design
 class Question(models.Model):
     lesson_id = models.ForeignKey(Lesson, on_delete=models.CASCADE)
-    question = models.TextField()
+    question_text = models.TextField()
     grade = models.TextField()
 
     def is_get_score(self, selected_ids):
