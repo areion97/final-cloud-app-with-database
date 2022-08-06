@@ -1,11 +1,7 @@
   applications:
   - name: mycloudfoundryApp123
-    routes:
-      - route: host.domain
     memory: 128M
     buildpack: python_buildpack
   - name: onlinecourse-nginx
-    routes:
-      - route: host.domain/static
     memory: 128M
     buildpack: staticfile_buildpack
